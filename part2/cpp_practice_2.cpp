@@ -53,8 +53,20 @@ int main() {
 	//Change the 24th element to "16"
 	//Print the array.
 	 
+		int arr [50];
+		int k =0;
+		for(int i =0; i<50; i++){
+			arr[i] = 2*k;
+			k++;
+			}
+		arr[24] = 16;
 
-
+		for(int j=0; j<50; j++){
+			cout<<arr[j]<<endl;
+			}
+							
+										
+																
 	//=================================================
 	//=================================================
 	//===============Problem 2========================
@@ -100,5 +112,14 @@ int main() {
 	//If you're wondering what kind of object the array variable "my_table" is
 	//without any [] after it, it's a pointer. That will be in part 3.
 
+	int new_array[10][10];
+
+	for (int i = 0; i < 10; i++) { 
+		for (int j = 0; j < 10; j++) { 
+			new_array[i][j] =(10*i)+j+1 ;
+			cout<< new_array[i][j] << " , " ;
+		}
+		cout<< endl;
+	}
 	return 0;
 }

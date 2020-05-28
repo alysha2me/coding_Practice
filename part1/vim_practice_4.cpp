@@ -25,16 +25,27 @@ int main() {
 			//Make sure it's properly indented by highlighting it 
 			//and typing =.
 			//
-			//Notice one thing: the file names are below
-			//the panels listed, but if there is a [+] after
-			//the file name it means there are unsaved changes.
-			//
-			//Save and quit the file when you're done by typing :wq
-			//in command mode for each of these.
-			//Compile and run this code.
+
+			bool important_thing = true;
+			if (important_thing) { 
+				int i = 1;
+				do { 
+					cout << "This code is important and reusable." << endl;
+					i++;
+				} while (i < my_super_important_number); 
+			}
+			
 		}
+		//Notice one thing: the file names are below
+		//the panels listed, but if there is a [+] after
+		//the file name it means there are unsaved changes.
+		//
+		//Save and quit the file when you're done by typing :wq
+		//in command mode for each of these.
+		//Compile and run this code.
 	}
-	return 0;
+}
+return 0;
 }
 
 

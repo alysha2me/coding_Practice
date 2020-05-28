@@ -17,6 +17,7 @@ ls: Lists everything in your current directory/folder.
 ls -a:  Lists everything including hidden files in your current folder.
 (Hidden directories are ones that begin with ., as in ".bashrc")
 
+ggG= :porperly indents entire file
 cd <directory>:  Changes folder to <directory>.  
 cd ~: Returns you to your home directory.
 cd /: Returns you to your the top system directory (outermost folder).

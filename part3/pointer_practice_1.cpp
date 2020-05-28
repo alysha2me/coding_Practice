@@ -51,13 +51,29 @@ int main() {
 
 	int * w = NULL;
 
+	w =& a;
+	*w = 8;
+	cout<< "a= " << a << endl;
+	
+	w =& b;
+	*w = 9;
+	cout<< "b= " << b << endl;
+
+	w =& c;
+	*w = 10;
+	cout<< "c= " << c << endl;
+
+
+
+	
+
 	//===============================================
 	//===============================================
 	//=================Problem 2=====================
 	//===============================================
 	//===============================================
 	//What is the meaning of these outputs?
-	
+
 
 	int N = 5;
 	int * M = &N;
@@ -68,6 +84,9 @@ int main() {
 	cout << "*M: " << *M << endl;
 
 	cout << "Why is this different between re-running the program?" << endl;
+	
+	//different everytime we run because stores in different locations
+
 
 	//===============================================
 	//===============================================

@@ -13,7 +13,7 @@ int main() {
 	if (important_thing) { 
 		 int i = 1;
 		 do { 
-			 cout << "This code is important and reusable." << endl;
+			cout << "This code is important and reusable." << endl;
 			 i++;
 		 } while (i == 2); 
 	}

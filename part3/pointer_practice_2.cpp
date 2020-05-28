@@ -70,7 +70,35 @@ int main() {
 
 	M = new double ** [n];
 
-	//Your code goes here.
+	//Your code goes here. 
+	//defining 3D matrix
+	for (int i = 0; i < n; i++){    
+		M[i] = new double * [m];
+		
+		for (int j = 0; j < m; j++){
+			M[i][j]= new double [s];
+		}
+	}
+	//populate matrix
+	for (int i = 0; i < n; i++) { 
+		for (int j = 0; j < m; j++) {
+			for (int k = 0; k < s; k++){ 
+				M[i][j][k] = i+j+k;	
+				cout << i << "," << j << "," << k << ": " << M[i][j][k] << "| ";
+			}
+		cout << endl;
+		}	
+	}
+	
+	//delete matrix
+	for (int i = 0; i < n; i++){    
+			
+		for (int j = 0; j < m; j++){
+			delete M[i][j];
+		}
+		delete M[i];
+
+	}
 
 	delete M;
 	return 0;
